@@ -1,0 +1,11 @@
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/controller/UserController.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/validator/UserValidator.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/service/SecurityServiceImpl.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/repository/RoleRepository.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/service/UserDetailsServiceImpl.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/service/UserServiceImpl.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/model/User.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/model/Role.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/service/UserService.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/repository/UserRepository.java
+/Users/OzimedeU/Desktop/vprofile/vprofile-project/src/main/java/com/visualpathit/account/service/SecurityService.java

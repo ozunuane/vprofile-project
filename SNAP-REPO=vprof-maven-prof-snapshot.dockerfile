@@ -1,9 +1,0 @@
-SNAP-REPO=vprof-maven-prof-snapshot
-NEXUS-USER=admin
-NEXUS-PASS=admin123
-RELEASE-REPO=Vprofile-release
-CENTRAL-REPO=vprofil-maven-central
-NEXUS-GRP-REPO=vpro-maven-group
-CENTRAL-REPO 
-NEXUSIP=180.60.1.244
-NEXUSPORT=8081
