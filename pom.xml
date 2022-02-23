@@ -166,7 +166,6 @@
       <url>http://${NEXUSIP}:${NEXUSPORT}/repository/${NEXUS-GRP-REPO}/</url>
     </repository>
   </repositories>
-</project>
 
 <repositories>
         <repository>
@@ -191,3 +190,5 @@
             <url>https://repo.maven.apache.org/maven2</url>
         </pluginRepository>
     </pluginRepositories>
+
+    </project>
