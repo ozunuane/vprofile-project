@@ -12,7 +12,7 @@
         force: yes
         force_basic_auth: yes
         url_username: admin
-        url_password: ptux123456
+        url_password: admin123
       register: wardeploy
      
       tags:
