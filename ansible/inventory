@@ -1,0 +1,5 @@
+web01  ansible_host=128.10.38.71
+
+
+[appsrvgrp]
+web01
