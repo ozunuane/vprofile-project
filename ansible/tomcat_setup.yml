@@ -13,9 +13,9 @@
 
     - name: Install JDK on Ubuntu 14/15/16/18
       apt:
-        name: openjdk-11-jdk
+        name: openjdk-8-jdk
         state: present
-        update_cache: yes
+        #update_cache: yes
       when: ansible_distribution == 'Ubuntu' 
 
     - name: Download Tomcat Tar Ball/Binaries
