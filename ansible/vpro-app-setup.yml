@@ -19,7 +19,7 @@
       tags:
        - deploy
 
-    - name: Stop tomcat svc
+    - name: Stop tomcat service
       service:
         name: tomcat
         state: stopped
