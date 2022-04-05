@@ -5,4 +5,4 @@ web01  ansible_host=128.10.38.71
 web01
 
 ansible_user=ubuntu
-ansible_ssh_private_key_file=jenlins-key.pem
+ansible_ssh_private_key_file=jenlins-new.pem
