@@ -1,4 +1,4 @@
-web01  ansible_host=128.10.32.69
+web01  ansible_host=128.10.37.255
 
 
 [apps]
