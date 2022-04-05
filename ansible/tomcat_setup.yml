@@ -15,7 +15,6 @@
       apt:
         name: open-jdk-8-jdk
         state: present
-        update_cache: yes
       when: ansible_distribution == 'Ubuntu' 
 
     - name: Install JDK on Ubuntu 14/15/16/18
