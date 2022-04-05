@@ -1,5 +1,5 @@
 - name: Common tool setup on all the servers
-  hosts: apps
+  hosts: appsrvgrp
   become: yes
   vars:
     tom_url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz
@@ -15,6 +15,11 @@
       apt:
         name: openjdk-8-jdk
         state: present
+        update_cache: yes
+      when: ansible_distribution == 'Ubuntu' 
+
+    - name: Install JDK on Ubuntu 14/15/16/18
+      apt:
         update_cache: yes
       when: ansible_distribution == 'Ubuntu' 
 
