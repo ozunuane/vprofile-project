@@ -10,18 +10,18 @@
         name: java-1.8.0-openjdk.x86_64
         state: present
       when: ansible_distribution == 'CentOS'
+    
+    - name: Install JDK on Ubuntu 14/15/16/18
+      apt:
+        update_cache: yes
+      when: ansible_distribution == 'Ubuntu'   
 
     - name: Install JDK on Ubuntu 14/15/16/18
       apt:
         name: openjdk-8-jdk
         state: present
-        install_recommends: no
       when: ansible_distribution == 'Ubuntu' 
 
-    - name: Install JDK on Ubuntu 14/15/16/18
-      apt:
-        update_cache: yes
-      when: ansible_distribution == 'Ubuntu' 
 
     - name: Download Tomcat Tar Ball/Binaries
       get_url:
