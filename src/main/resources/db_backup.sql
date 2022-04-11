@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.18, for Linux (x86_64)
 --
--- Host: localhost    Database: accounts
+-- Host: localhost   Database: accounts
 -- ------------------------------------------------------
 -- Server version	5.7.18-0ubuntu0.16.10.1
 
