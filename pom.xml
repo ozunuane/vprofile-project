@@ -1,18 +1,5 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-   <repositories>
-  <repository>
-    <id>central</id>
-    <name>Central Repository</name>
-    <url>http://repo.maven.apache.org/maven2</url>
-    <layout>default</layout>
-    <snapshots>
-      <enabled>false</enabled>
-    </snapshots>
-  </repository>
-</repositories>
-  
-   
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.visualpathit</groupId>
     <artifactId>vprofile</artifactId>
@@ -66,7 +53,7 @@
             <version>${hibernate-validator.version}</version>
         </dependency>
 
-        <dependengit
+        <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
             <version>${spring-data-jpa.version}</version>
@@ -136,8 +123,6 @@
 		    <artifactId>commons-fileupload</artifactId>
 		    <version>1.3.1</version>
 		</dependency>
-
-              
 		 <!-- Memcached Dependency -->
 		<dependency>
 		    <groupId>net.spy</groupId>
@@ -215,11 +200,6 @@
  		            </execution>
  		        </executions>
  		</plugin>
-
-
-
-    
-     
 		
         </plugins>
     </build>
