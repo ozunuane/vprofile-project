@@ -1,0 +1,7 @@
+FROM tomcat:8.5.78-jre8-openjdk-slim
+RUN rm -rf /usr/local/tomcat/webapps/*
+COPY target/vprofile-v2 /usr/local/tomcat/webapps/ ROOT.war
+
+EXPOSE 8080
+CMD ["catalina.sh" "run"]
+WORKDIR /usr/local/tomcat/webapps
