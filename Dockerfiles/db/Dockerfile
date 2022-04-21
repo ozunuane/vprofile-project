@@ -2,8 +2,8 @@ FROM mysql:5.6.51
 
 
 
-ENV MYSQL_DATABASE= "accounts"
-ENV MYSQL_ROOT_PASSWORD= "admin123"
+ENV MYSQL_DATABASE="accounts"
+ENV MYSQL_ROOT_PASSWORD="admin123"
 
 ADD db_backup.sql /docker-entrypoint-initdb.d/db_backup.sql
 
