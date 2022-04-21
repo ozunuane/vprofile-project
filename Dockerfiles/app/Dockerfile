@@ -7,7 +7,6 @@ ENV PATH=/usr/local/tomcat/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 
 CMD ["/bin/bash"]
 
-/bin/sh -c mkdir -p "$CATALINA_HOME"
 
 WORKDIR /usr/local/tomcat/webapps
 
