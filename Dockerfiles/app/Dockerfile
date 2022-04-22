@@ -105,5 +105,5 @@ WORKDIR ./
 ###
 # Start container
 ###
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
 CMD ["start-tomcat.sh"]
