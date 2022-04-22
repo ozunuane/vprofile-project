@@ -103,7 +103,7 @@ COPY web.xml ${CATALINA_HOME}/conf/
 ###
 COPY server.xml ${CATALINA_HOME}/conf/
 
-ADD target/vprofile-v2.war ${CATALINA_HOME}/server/webapps/ROOT.war && \
+COPY target/vprofile-v2.war ${CATALINA_HOME}/server/webapps/ROOT.war 
 
 ###
 # Tomcat start script
