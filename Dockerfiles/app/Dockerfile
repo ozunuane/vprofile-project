@@ -101,10 +101,10 @@ COPY target/vprofile-v2.war ${CATALINA_HOME}/server/webapps/ROOT.war
 ###
 COPY start-tomcat.sh ${CATALINA_HOME}/bin
 COPY entrypoint.sh /
-
+WORKDIR ./
 ###
 # Start container
 ###
-RUN sudo chmod +x entrypoint.sh
+RUN  chmod +x entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["start-tomcat.sh"]
+CMD ["start-tomcat.sh", "run"]
