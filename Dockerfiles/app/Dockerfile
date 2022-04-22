@@ -105,5 +105,6 @@ COPY entrypoint.sh /
 ###
 # Start container
 ###
+RUN sudo chmod +x entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["start-tomcat.sh"]
