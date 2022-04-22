@@ -93,15 +93,6 @@ RUN set -eux; \
 	gosu --version; \
 	gosu nobody true
 
-###
-# Security enhanced web.xml
-###
-COPY web.xml ${CATALINA_HOME}/conf/
-
-###
-# Security enhanced server.xml
-###
-COPY server.xml ${CATALINA_HOME}/conf/
 
 COPY target/vprofile-v2.war ${CATALINA_HOME}/server/webapps/ROOT.war 
 
