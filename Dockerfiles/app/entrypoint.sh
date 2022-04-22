@@ -27,4 +27,4 @@ if [ "$1" = 'start-tomcat.sh' ] || [ "$1" = 'catalina.sh' ]; then
     exec gosu tomcat "$@"
 fi
 
-exec "$@"
+exec 
