@@ -100,8 +100,7 @@ COPY vprofile-v2.war ${CATALINA_HOME}/server/webapps/ROOT.war
 # Tomcat start script
 ###
 COPY start-tomcat.sh ${CATALINA_HOME}/bin
-COPY entrypoint.sh /
-WORKDIR ./
+COPY entrypoint.sh ${CATALINA_HOME}/bin
 ###
 # Start container
 ###
