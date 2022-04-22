@@ -105,6 +105,5 @@ WORKDIR ./
 ###
 # Start container
 ###
-RUN  chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["start-tomcat.sh", "run"]
+CMD ["start-tomcat.sh"]
