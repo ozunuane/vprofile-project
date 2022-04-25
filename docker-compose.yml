@@ -2,7 +2,7 @@ version: "3"
 services:
 
   vprodb:
-    image: ozunuane/vprodb:v1
+    image: ozunuane/vprodb:V1
     ports:
       - "3306:3306"
     volumes:
@@ -25,7 +25,7 @@ services:
       - RABBITMQ_DEFAULT_PASS=test 
 
   vproapp:
-    image: ozunuane/vproapp:v1
+    image: ozunuane/vproapp:V1
     ports:
       - "8080:8080"
     volumes:
@@ -33,7 +33,7 @@ services:
 
 
   vproweb:
-    image: ozunuane/vproaweb:v1
+    image: ozunuane/vproaweb:V1
     ports:
       - "80:80"
 
