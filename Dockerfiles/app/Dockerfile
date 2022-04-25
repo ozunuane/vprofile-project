@@ -1,4 +1,4 @@
-FROM tomcat:8.0-jre-11
+FROM tomcat:8.0-jre11
 LABEL maintainer="ozunuane"
 
 RUN rm -fr /usr/local/tomcat/webapps/*
