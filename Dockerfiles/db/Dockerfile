@@ -1,5 +1,4 @@
-FROM mysql:5.6.51
-
+FROM mysql:5.5.62
 
 
 ENV MYSQL_DATABASE="accounts"
