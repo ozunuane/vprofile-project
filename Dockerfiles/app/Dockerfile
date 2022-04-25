@@ -1,7 +1,11 @@
-FROM tomcat:8.5.38
+FROM tomcat:8.0
 LABEL maintainer="ozunuane"
-ADD vprofile-v2.war /usr/local/tomcat/webapps/*
-RUN chmod +x /usr/local/tomcat/bin/catalina.sh
+
+RUN rm -fr /usr/local/tomcat/webapps/*
+
+ADD vprofile-v2.war /usr/local/tomcat/webapps/
+COPY target/vprofile-v2.war  /usr/local/tomcat/webapps/ROOT.war
+
 
 
 
