@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3"
 services:
 
   vprodb:
@@ -6,9 +6,9 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - vprodbdata:/var/lib/mysql
+      - vprodbdata: /var/lib/mysql
     environment:
-      -  MYSQL_ROOT_PASSWORD="admin123"
+      -  MYSQL_ROOT_PASSWORD= "admin123"
 
 
   vpromch:
@@ -29,7 +29,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - vproappdata:/usr/local/tomcat/webapps
+      - vproappdata: /usr/local/tomcat/webapps
 
 
   vproweb:
