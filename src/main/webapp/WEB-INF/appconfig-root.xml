@@ -9,7 +9,11 @@
     <import resource="appconfig-mvc.xml"/>
 
     <import resource="appconfig-data.xml"/>
+<<<<<<< HEAD
     <import resource="appconfig-rabbitmq.xml"/>
+=======
+
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
     <import resource="appconfig-security.xml"/>
 
     <!-- Scans within the base package of the application for @Component classes to configure as beans -->

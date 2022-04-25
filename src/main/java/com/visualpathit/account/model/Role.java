@@ -2,7 +2,10 @@ package com.visualpathit.account.model;
 
 import javax.persistence.*;
 import java.util.Set;
+<<<<<<< HEAD
 /**{@author waheedk} !*/
+=======
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 @Entity
 @Table(name = "role")
 public class Role {
@@ -22,7 +25,11 @@ public class Role {
         return id;
     }
     /** {@inheritDoc}} !*/
+<<<<<<< HEAD
     public  void setId(final Long id) {
+=======
+    public final void setId(final Long id) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         this.id = id;
     }
     /**
@@ -32,17 +39,29 @@ public class Role {
         return name;
     }
     /** {@inheritDoc}} !*/
+<<<<<<< HEAD
     public  void setName(final String name) {
+=======
+    public final void setName(final String name) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         this.name = name;
     }
     /**
      * {@inheritDoc}} 
      !*/
+<<<<<<< HEAD
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "roles",cascade = CascadeType.ALL)
     /**
      * {@link Role#id}
      !*/
     public Set <User> getUsers() {
+=======
+    @ManyToMany(mappedBy = "roles")
+    /**
+     * {@link Role#id}
+     !*/
+    public Set<User> getUsers() {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         return users;
     }
     /**

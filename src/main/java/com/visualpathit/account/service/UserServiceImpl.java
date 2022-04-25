@@ -9,7 +9,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+<<<<<<< HEAD
 import java.util.List;
+=======
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 
 /** {@author waheedk}!*/
 @Service
@@ -35,6 +38,7 @@ public class UserServiceImpl implements UserService {
     public User findByUsername(final String username) {
         return userRepository.findByUsername(username);
     }
+<<<<<<< HEAD
     
     @Override
     public List<User> getList() {
@@ -44,4 +48,6 @@ public class UserServiceImpl implements UserService {
 	public User findById(long id){
     	return userRepository.findOne(id);
     }
+=======
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 }

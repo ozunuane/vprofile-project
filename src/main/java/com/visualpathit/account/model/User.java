@@ -2,13 +2,20 @@ package com.visualpathit.account.model;
 
 
 import javax.persistence.*;
+<<<<<<< HEAD
 
 import java.io.Serializable;
+=======
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 import java.util.Set;
 /**{@author waheedk} !*/
 @Entity
 @Table(name = "user")
+<<<<<<< HEAD
 public class User implements Serializable {
+=======
+public class User {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 	/** the id field !*/
     private Long id;
     /** the user name field !*/
@@ -19,6 +26,7 @@ public class User implements Serializable {
     private String userEmail;
     /** the passwordConfirm field !*/
     private String passwordConfirm;
+<<<<<<< HEAD
     /** the profileImg field !*/
     private String profileImg;
     /** the profileImgPath field !*/
@@ -40,6 +48,8 @@ public class User implements Serializable {
     private String workingExperience;
     
     
+=======
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
     /** the roles field !*/
     private Set<Role> roles;
     /** {@inheritDoc}} !*/
@@ -50,7 +60,11 @@ public class User implements Serializable {
         return id;
     }
     /** {@inheritDoc}} !*/
+<<<<<<< HEAD
     public  void setId(final Long id) {
+=======
+    public final void setId(final Long id) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         this.id = id;
     }
     /**{@inheritDoc}} !*/
@@ -58,7 +72,11 @@ public class User implements Serializable {
         return username;
     }
     /** {@inheritDoc}} !*/
+<<<<<<< HEAD
     public  void setUsername(final String username) {
+=======
+    public final void setUsername(final String username) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         this.username = username;
     }
     /**
@@ -71,7 +89,11 @@ public class User implements Serializable {
     /**
      * {@inheritDoc}} 
      !*/
+<<<<<<< HEAD
     public  void setPassword(final String password) {
+=======
+    public final void setPassword(final String password) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         this.password = password;
     }
     /**
@@ -82,7 +104,11 @@ public class User implements Serializable {
 		return userEmail;
 	}
     /** {@inheritDoc}} !*/
+<<<<<<< HEAD
 	public  void setUserEmail(final String userEmail) {
+=======
+	public final void setUserEmail(final String userEmail) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 		this.userEmail = userEmail;
 	}
 
@@ -95,7 +121,11 @@ public class User implements Serializable {
         return passwordConfirm;
     }
 	 /** {@inheritDoc}} !*/
+<<<<<<< HEAD
     public  void setPasswordConfirm(final String passwordConfirm) {
+=======
+    public final void setPasswordConfirm(final String passwordConfirm) {
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
         this.passwordConfirm = passwordConfirm;
     }
     /** {@inheritDoc}} !*/
@@ -105,6 +135,7 @@ public class User implements Serializable {
         return roles;
     }
     /** {@inheritDoc}} !*/
+<<<<<<< HEAD
     public void setRoles(final Set<Role> roles) {
         this.roles = roles;
     }
@@ -212,4 +243,9 @@ public class User implements Serializable {
 	}
 	
 	
+=======
+    public final void setRoles(final Set<Role> roles) {
+        this.roles = roles;
+    }
+>>>>>>> c40f94e70bc7afa7ba32bd0389db6cf3f8f3bdb1
 }
