@@ -6,11 +6,12 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - /vprodbdata:/var/lib/mysql
+      -  /vprodbdata:/var/lib/mysql
 
     environment:
       -  MYSQL_ROOT_PASSWORD="admin123"
-
+    links:
+      - "vpromch"
 
   vpromch:
     image: memcached
@@ -24,19 +25,20 @@ services:
     environment:
       - RABBITMQ_DEFAULT_USER=test
       - RABBITMQ_DEFAULT_PASS=test 
+  
+  vproweb:
+    image: ozunuane/vproweb:V1
+    ports:
+      - "80:80"
+    links:
+      - "vproapp"  
 
   vproapp:
     image: ozunuane/vproapp:V1
     ports:
       - "8080:8080"
     volumes:
-      - /vproappdata:/usr/local/tomcat/webapps
-
-
-  vproweb:
-    image: ozunuane/vproweb:V1
-    ports:
-      - "80:80"
+      - vproappdata:/usr/local/tomcat/webapps
 
 
 
