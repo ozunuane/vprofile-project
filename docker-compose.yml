@@ -33,7 +33,7 @@ services:
 
 
   vproweb:
-    image: ozunuane/vproaweb:V1
+    image: ozunuane/vproweb:V1
     ports:
       - "80:80"
 
